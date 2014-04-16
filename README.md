@@ -8,8 +8,8 @@ Company |
 
 
 Version| Build Status| ID |
-:------:|:-----:| 
-v.0.1 b |[![Build Status](https://travis-ci.org/kardesyazilim/proper.svg?branch=master)](https://travis-ci.org/kardesyazilim/proper)| 0|
+:------:|:-----:| :------:|
+v.0.1 b |[![Build Status](https://travis-ci.org/kardesyazilim/proper.svg?branch=master)](https://travis-ci.org/kardesyazilim/proper)| 0 |
 
 
 > creasoup workflow prepare
