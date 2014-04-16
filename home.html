@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proper</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Leonidas Gorgo" />
+        <meta name="description" content="creasoup" />
+        <meta name="keywords" content="creasoup" />
+        <meta name="application-name" content="Creasoup Erp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Le styles -->
+        <!-- Use new way for google web fonts 
+        http://www.smashingmagazine.com/2012/07/11/avoiding-faux-weights-styles-google-web-fonts -->
+        <!-- Headings -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />  -->
+        <!-- Text -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' /> --> 
+        <!--[if lt IE 9]>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
+        <!-- Core stylesheets do not remove -->
+        <link href="skins/admin/proper/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="skins/admin/proper/css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+        <link href="skins/admin/proper/css/supr-theme/jquery.ui.supr.css" rel="stylesheet" type="text/css"/>
+        <link href="skins/admin/proper/css/icons.css" rel="stylesheet" type="text/css" />
+
+        <!-- Plugins stylesheets -->
+        <link href="media/ext/plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
+        <link href="media/ext/plugins/misc/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+        <link href="media/ext/plugins/misc/search/tipuesearch.css" type="text/css" rel="stylesheet" />
+
+        <link href="media/ext/plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />
+
+        <!-- Main stylesheets -->
+        <link href="skins/admin/proper/css/main.css" rel="stylesheet" type="text/css" /> 
+
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="skins/admin/proper/css/custom.css" rel="stylesheet" type="text/css" /> 
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png" />
+
+        <script type="text/javascript">
+            //adding load class to body and hide page
+            document.documentElement.className += 'loadstate';
+        </script>
+    </head>
+    <body>
+
+        <!-- loading animation -->
+        <div id="qLoverlay"></div>
+        <div id="qLbar"></div>
+
+        <div id="header" class="fixed">
+
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="brand" href="./home">Proper</a>
+                        <div class="nav-no-collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="./home"><span class="icon16 icomoon-icon-screen-2"></span> Anasayfam</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="icon16 icomoon-icon-cog"></span> Ayarlarım
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu">
+                                            <ul>
+                                                <li>                                                    
+                                                    <a href="#" title="Hızlı Menu"><span class="icon16 icomoon-icon-equalizer"></span>Hızlı Menu</a>
+                                                </li>
+                                                <li>                                                    
+                                                    <a href="#" title="Sistem Ayarlarım"><span class="icon16 icomoon-icon-wrench"></span>Sistem Ayarlarım</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="icon16 icomoon-icon-mail-3"></span>Mesajlarım <span class="notification">8</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu">
+                                            <ul class="messages">    
+                                                <li class="header"><strong>Toplam</strong> (10) adet email  (2) adet iletiniz bulunmaktadır.</li>
+                                                <li>
+                                                    <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                    <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Kadircan Erkıralp</strong></a><span class="time">35 min ago</span></span>
+                                                    <span class="msg">Felan filan felan filan...</span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon avatar"><img src="media/user/kardesyazilim.jpg" alt="" /></span>
+                                                    <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Kardeş Yazılım</strong></a><span class="time">1 hour ago</span></span>
+                                                    <span class="msg">Felan filan felan filan...</span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                    <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Tedarik(Group)</strong></a><span class="time">1 day ago</span></span>
+                                                    <span class="msg">Felan filan felan filan...</span>
+                                                </li>
+                                                <li class="view-all"><a href="#">Tüm Mesajlarım <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="nav pull-right usernav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu">
+                                            <ul class="notif">
+                                                <li class="header"><strong>(3)</strong> adet iletiniz var</li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                        <span class="event">Yeni (1) adet kullanıcı eklendi</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                        <span class="event">Yeni (1) adet şipariş</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                        <span class="event">Bilgi işlem departmanından </span>
+                                                    </a>
+                                                </li>
+                                                <li class="view-all"><a href="#">Tüm İletiler<span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                        <img src="media/user/kardesyazilim.jpg" alt="" class="image" /> 
+                                        <span class="txt">kardesyazilim@gmail.com</span>
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="./myprofile"><span class="icon16 icomoon-icon-user-3"></span>Profilimi Düzenle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./caht"><span class="icon16 icomoon-icon-comments-2"></span>Chat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./newhelp"><span class="icon16 icomoon-icon-plus-2"></span>Destek Talebi Aç</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./"><span class="icon16 icomoon-icon-exit"></span> Çıkış</a></li>
+                            </ul>
+                        </div><!-- /.nav-collapse -->
+                    </div>
+                </div><!-- /navbar-inner -->
+            </div><!-- /navbar --> 
+
+        </div><!-- End #header -->
+        <div id="wrapper">
+            <div class="resBtn">
+                <a href="#"><span class="icon16 minia-icon-list-3"></span></a>
+            </div><!--resBtn-->
+
+            <div class="collapseBtn leftbar">
+                <a href="#" class="tipR" title="Menüyü Gizle"><span class="icon12 minia-icon-layout"></span></a>
+            </div>
+            <!--Sidebar background-->
+            <div id="sidebarbg"></div>
+            <div id="sidebar">
+                <div class="shortcuts">
+                    <ul>
+                        <li><a href="./support" title="Destek Bildirimi" class="tip"><span class="icon24 icomoon-icon-support"></span></a></li>
+                        <li><a href="./bug-reprort" title="BUG REPORT" class="tip"><span class="icon24 icomoon-icon-bug"></span></a></li>
+                        <li><a href="./myreports" title="Hızlı Raporlar" class="tip"><span class="icon24 icomoon-icon-pie-2"></span></a></li>
+                        <li><a href="./mysupport" title="Hızlı Bilgilendirme" class="tip"><span class="icon24 icomoon-icon-pencil"></span></a></li>
+                    </ul>
+                </div><!-- End search -->
+
+                <div class="sidenav">
+                    <div class="sidebar-widget" style="margin: -1px 0 0 0;">
+                        <h5 class="title" style="margin-bottom:0">Ana Menü</h5>
+                    </div><!-- End .sidenav-widget -->
+                    <div class="mainnav">
+                        <ul>
+                            <li><a href="#" title="Kişisel"><span class="icon16 icomoon-icon-user-4"></span>Kişisel</a>
+                                <ul class="sub">
+                                    <li><a href="./mycal" title="Ajandam"><span class="icon16 icomoon-icon-calendar"></span>Ajandam</a></li>
+                                    <li><a href="./myemail" title="Mesajlarım"><span class="icon16 icomoon-icon-mail-3"></span>Mesajlarım</a></li>
+                                    <li><a href="./mynotes" title="Notlarım"><span class="icon16 icomoon-icon-pencil-2"></span>Notlarım</a></li>
+                                    <li><a href="./myjobs" title="Görevlerim"><span class="icon16 icomoon-icon-checkmark-2"></span>Görevlerim</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Kategori Yönetimi"><span class="icon16  icomoon-icon-list-view-2"></span>Kategori Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href='./procat'><span class='icon16 icomoon-icon-basket-2'></span>Ürün Kategorileri</a></li>
+                                    <li><a href='./stacat'><span class='icon16  icomoon-icon-link-2'></span>Statik Sayfa Kategorileri</a></li>
+                                    <li><a href='./helpcat'><span class='icon16  icomoon-icon-help-2'></span>Destek Kategorileri</a></li>
+                                    <li><a href='./mailcat'><span class='icon16  icomoon-icon-mail'></span>Mail Kategorileri</a></li>
+                                </ul>
+                            </li>
+                            <li><a href='#' title="Ürün Yönetimi"><span class="icon16 icomoon-icon-basket"></span>Ürün Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./prolist" title="Ürün Listesi"><span class="icon16 icomoon-icon-basket-2"></span>Ürün Listesi</a></li>
+                                    <li><a href="./prospec" title="Ürün Özellik Listesi"><span class="icon16 icomoon-icon-box-add"></span>Ürün Özellik Listesi</a></li>
+                                    <li><a href="./procom" title="Ürün Yorumları"><span class="icon16 icomoon-icon-comments-2"></span>Ürün Yorumları</a></li>
+                                    <li><a href="./prorep" title="Ürün Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Ürün Raporları</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Müşteri Yönetimi"><span class="icon16 icomoon-icon-users"></span>Müşteri Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./cuslist" title="Müşteri Listesi"><span class="icon16 icomoon-icon-users-2"></span>Müşteri Listesi</a></li>
+                                    <li><a href="./cusgroup" title="Müşteri Grupları"><span class="icon16 icomoon-icon-hanger"></span>Müşteri Grupları</a></li>
+                                    <li><a href="./cuscom" title="Müşteri Yorumları"><span class="icon16 icomoon-icon-comments-2"></span>Müşteri Yorumları</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Sipariş Yönetimi"><span class="icon16 icomoon-icon-cart-checkout"></span>Sipariş Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./orlist" title="Sipariş Listesi"><span class="icon16 icomoon-icon-cart-3"></span>Sipariş Listesi</a></li>
+                                    <li><a href="./orcom" title="Sipariş Yorumları"><span class="icon16 icomoon-icon-comments-2"></span>Sipariş Yorumları</a></li>
+                                    <li><a href="./orrep" title="Sipariş Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Sipariş Raporları</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Kampanya Yönetimi"><span class="icon16 icomoon-icon-wand-2"></span>Kampanya Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./camlist" title="Kampanya Listesi"><span class="icon16 icomoon-icon-stairs"></span>Kampanya Listesi</a></li>
+                                    <li><a href="./cambonus" title="Puan ve Hediye Yönetimi"><span class="icon16 icomoon-icon-podium"></span>Puan ve Hediye Yönetimi</a></li>
+                                    <li><a href="./camcom" title="Kampanya Yorumları"><span class="icon16 icomoon-icon-comments-2"></span>Kampanya Yorumları</a></li>
+                                    <li><a href="./camrep" title="Kampanya Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Kampanya Raporları</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Tedarik Yönetimi"><span class="icon16 icomoon-icon-factory"></span>Tedarik Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./proform" title="Tedarik Formu"><span class="icon16 icomoon-icon-shuffle"></span>Tedarik Formu</a></li>
+                                    <li><a href="./prolist" title="Tedarik Listesi"><span class="icon16 icomoon-icon-loop-3"></span>Tedarik Listesi</a></li>
+                                    <li><a href="./prorep" title="Tedarik Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Tedarik Raporları</a></li>
+                                    <li><a href="./procron" title="Zamanlanmış Görevler"><span class="icon16 icomoon-icon-history"></span>Zamanlanmış Görevler</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Teslimat Yönetimi"><span class="icon16 icomoon-icon-truck"></span>Teslimat Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./dellist" title="Teslimat Listesi"><span class="icon16 icomoon-icon-paper-plane"></span>Teslimat Listesi</a></li>
+                                    <li><a href="./delrep" title="Teslimat Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Teslimat Raporları</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Banka Yönetimi"><span class="icon16 icomoon-icon-coins"></span>Banka Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./banklist" title="Banka Listesi"><span class="icon16 icomoon-icon-library"></span>Banka Listesi</a></li>
+                                    <li><a href="./arena" title="Arena"><span class="icon16 icomoon-icon-ampersand-2"></span>Arena</a></li>
+                                    <li><a href="./bankrep" title="Banka Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Banka Raporları</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Arama Yönetimi"><span class="icon16 icomoon-icon-search-5"></span>Arama Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./smart" title="Akıllı Arama"><span class="icon16 icomoon-icon-eye-3"></span>Akıllı Arama</a></li>
+                                    <li><a href="./tag" title="Etiket"><span class="icon16 icomoon-icon-tag-3"></span>Etiket</a></li>
+                                    <li><a href="./searchrep" title="Arama Raporları"><span class="icon16 icomoon-icon-stats-down"></span>Arama Raporları</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="CMS Yönetimi"><span class="icon16 icomoon-icon-libreoffice"></span>CMS Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./st" title="Statik Sayfa Yönetimi"><span class="icon16 icomoon-icon-html5"></span>Statik Sayfa Yönetimi</a></li>
+                                    <li><a href="./ct" title="Müşteri Hizmetleri"><span class="icon16 icomoon-icon-people"></span>Müşteri Hizmetleri</a></li>
+                                    <li><a href="./ht" title="Destek Sayfaları"><span class="icon16 icomoon-icon-help-2"></span>Destek Sayfaları</a></li>
+                                    <li><a href="./pt" title="Anket"><span class="icon16 icomoon-icon-socket"></span>Anket</a></li>
+                                    <li><a href="./at" title="Duyurular"><span class="icon16 icomoon-icon-announcement"></span>Duyurular</a></li>
+                                    <li><a href="./ht" title="Anasayfa Yönetimi"><span class="icon16 icomoon-icon-king"></span>Anasayfa Yönetimi</a></li>
+                                    <li><a href="./sbt" title="Slider ve Banner Yönetimi"><span class="icon16 icomoon-icon-film-2"></span>Slider ve Banner </a></li>
+                                    <li><a href="./prt" title="Sözleşmeler ve Şartnameler"><span class="icon16 icomoon-icon-spades"></span>Söz. ve Şartnameler</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Sosyal Medya Yönetimi"><span class="icon16 icomoon-icon-windy"></span>S. Medya Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./facabook" title="Facebook"><span class="icon16 icomoon-icon-facebook"></span>Facebook</a></li>
+                                    <li><a href="./twitter" title="Twitter"><span class="icon16 icomoon-icon-twitter"></span>Twitter</a></li>
+                                    <li><a href="./plus" title="G+"><span class="icon16 icomoon-icon-google-plus-3"></span>G+</a></li>
+                                    <li><a href="./pinterest" title="Pinterest"><span class="icon16  icomoon-icon-pinterest"></span>Pinterest</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Planlama Yönetimi"><span class="icon16 icomoon-icon-brain"></span>Planlama Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./product" title="Proje Yönetimi"><span class="icon16 icomoon-icon-knight"></span>Proje Yönetimi</a></li>
+                                    <li><a href="./jobs" title="Görev Yönetimi"><span class="icon16 icomoon-icon-thumbs-up-3"></span>Görev Yönetimi</a></li>
+                                    <li><a href="./productrep" title="Proje Rapor"><span class="icon16 icomoon-icon-stats-down"></span>Proje Rapor</a></li>
+                                    <li><a href="./doclist" title="Döküman Yönetimi"><span class="icon16 icomoon-icon-leaf"></span>Döküman Yönetimi</a>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="İnsan Kaynakları Yönetimi"><span class="icon16 icomoon-icon-accessibility"></span>İ.Kaynakları Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./personlist" title="Personel Listesi"><span class="icon16 icomoon-icon-smiley"></span>Personel Listesi</a></li>
+                                    <li><a href="./cvbank" title="CV Bankası"><span class="icon16 icomoon-icon-man"></span>CV Bankası</a></li>
+                                    <li><a href="./personrep" title="Personel Analizleri"><span class="icon16 icomoon-icon-flag-2"></span>Personel Analizleri</a></li>
+                                    <li><a href="./education" title="Eğitim Planlama"><span class="icon16 icomoon-icon-anchor"></span>Eğitim Planlama</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Rapor Yönetimi"><span class="icon16  icomoon-icon-chart"></span>Rapor Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./repwidzard" title="Rapor Sihirbazı"><span class="icon16 icomoon-icon-rating-2"></span>Rapor Sihirbazı</a></li>
+                                    <li><a href="./replist" title="Rapor Listesi"><span class="icon16 icomoon-icon-pie"></span>Rapor Listesi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="CRM"><span class="icon16 icomoon-icon-diamond"></span>CRM</a>
+                                <ul class="sub">
+                                    <li><a href="./inbound" title="Gelen İstekler"><span class="icon16 icomoon-icon-sun-glasses"></span>Gelen İstekler</a></li>
+                                    <li><a href="./outbound" title="Zorunlu istekler"><span class="icon16 icomoon-icon-glasses-3"></span>Zorunlu istekler</a></li>
+                                    <li><a href="./offer" title="Teklif Yönetimi"><span class="icon16 icomoon-icon-gun"></span>Teklif Yönetimi</a></li>
+                                    <li><a href="./crmrep" title="Raporlar"><span class="icon16 icomoon-icon-stats-down"></span>Raporlar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Tasarım Yönetimi"><span class="icon16 icomoon-icon-wand"></span>Tasarım Yönetimi</a>
+                                <ul class="sub">
+                                    <li><a href="./desf" title="Frontend Tasarım"><span class="icon16 icomoon-icon-star-5"></span>Frontend Tasarım</a></li>
+                                    <li><a href="./desm" title="Mobil Tasarım"><span class="icon16 icomoon-icon-heart-4"></span>Mobil Tasarım</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Sistem Yönetimi"><span class="icon16 icomoon-icon-command"></span>Sistem Yönetimi</a>
+                                <ul class="sub">
+
+
+                                </ul>
+                            </li>
+
+
+
+
+
+                        </ul>
+                    </div><!--mainnav-->
+
+                </div><!--sidenav-->
+                <div class="sidebar-widget">
+                    <h5 class="title">Sistem Yükü</h5>
+                    <div class="content">
+                        <span class="icon16 icomoon-icon-loop left"></span>
+                        <div class="progress progress-mini progress-warning left tip" title="90%">
+                            <div class="bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="percent">90%</span>
+                        <div class="stat">19419.94 / 12000 MB</div>
+                    </div>
+
+                </div><!-- End .sidenav-widget -->
+                <div class="sidebar-widget">
+                    <h5 class="title">CPU</h5>
+                    <div class="content">
+                        <span class="icon16 icomoon-icon-cabinet left"></span>
+                        <div class="progress progress-mini progress-danger left tip" title="23%">
+                            <div class="bar" style="width: 23%;"></div>
+                        </div>
+                        <span class="percent">23%</span>
+                        <div class="stat">9000/12000 MHZ</div>
+                    </div>
+
+                </div><!-- End .sidenav-widget -->
+                <div class="sidebar-widget">
+                    <h5 class="title">Disk Kullanımı</h5>
+                    <div class="content">
+                        <span class="icon16 icomoon-icon-drive left"></span>
+                        <div class="progress progress-mini progress-info left tip" title="1.6%">
+                            <div class="bar" style="width: 1.6%;"></div>
+                        </div>
+                        <span class="percent">1.6%</span>
+                        <div class="stat">304.44 / 80000 MB</div>
+                    </div>
+
+                </div><!-- End .sidenav-widget -->
+
+                <div class="sidebar-widget">
+                    <h5 class="title">Properde Şuanda</h5>
+                    <div class="content">
+
+                        <div class="stats">
+                            <div class="item">
+                                <div class="head clearfix">
+                                    <div class="txt">Ziyaretçi</div>
+                                </div>
+                                <span class="icon16 icomoon-icon-eye left"></span>
+                                <div class="number">21</div>
+                                <div class="change">
+                                    <span class="icon24 icomoon-icon-arrow-up-2 green"></span>
+                                    5%
+                                </div>
+                                <span id="stat1" class="spark"></span>
+                            </div>
+                            <div class="item">
+                                <div class="head clearfix">
+                                    <div class="txt">Yorumlar</div>
+                                </div>
+                                <span class="icon16 icomoon-icon-thumbs-up left"></span>
+                                <div class="number">308</div>
+                                <div class="change">
+                                    <span class="icon24 icomoon-icon-arrow-down-2 red"></span>
+                                    8%
+                                </div>
+                                <span id="stat2" class="spark"></span>
+                            </div>
+                            <div class="item">
+                                <div class="head clearfix">
+                                    <div class="txt">Sipariş</div>
+                                </div>
+                                <span class="icon16 icomoon-icon-cart-add left"></span>
+                                <div class="number">4ad.</div>
+                                <div class="change">
+                                    <span class="icon24 icomoon-icon-arrow-down-2 red"></span>
+                                    1%
+                                </div>
+                                <span id="stat3" class="spark"></span>
+                            </div>
+                            <div class="item">
+                                <div class="head clearfix">
+                                    <div class="txt">Teslimat</div>
+                                </div>
+                                <span class="icon16 icomoon-icon-trophy left"></span>
+                                <div class="number">3ad.</div>
+                                <div class="change">
+                                    <span class="icon24 icomoon-icon-arrow-up-2 green"></span>
+                                    2
+                                </div>
+                                <span id="stat4" class="spark"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- End .sidenav-widget -->
+
+
+            </div><!--sidebar-->
+            <div id="content" class="clearfix">
+                <div class="contentwrapper">
+                    <div class="heading">
+
+                        <h3>Anasayfam</h3>                    
+
+                        <div class="resBtnSearch">
+                            <a href="#"><span class="icon16 icomoon-icon-search-3"></span></a>
+                        </div>
+
+                        <div class="search">
+
+                            <form id="searchform" action="">
+                                <input type="text" id="tipue_search_input" class="top-search" placeholder="Hızlı Arama" />
+                                <input type="submit" id="tipue_search_button" class="search-btn" value=""/>
+                            </form>
+
+                        </div><!-- End search -->
+
+                        <ul class="breadcrumb">
+                            <li>Şuanda Burdasınız:</li>
+                            <li>
+                                <a href="#" class="tip" title="Anasayfaya Geri Dön">
+                                    <span class="icon16 icomoon-icon-screen-2"></span>
+                                </a> 
+                                <span class="divider">
+                                    <span class="icon16 icomoon-icon-arrow-right-2"></span>
+                                </span>
+                            </li>
+                            <li class="active">Anasayfam</li>
+                        </ul>
+
+                    </div><!-- End .heading-->
+                    <div class="row-fluid">
+
+                        <div class="span8">
+                            <div class="centerContent">
+
+                                <ul class="bigBtnIcon">
+                                    <li>
+                                        <a href="#" title="Yeni Müşteri" class="tipB">
+                                            <span class="icon icomoon-icon-users"></span>
+                                            <span class="txt">Müşteri</span>
+                                            <span class="notification">5 Yeni</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Yeni Destek" class="tipB">
+                                            <span class="icon icomoon-icon-support"></span>
+                                            <span class="txt">Destek</span>
+                                            <span class="notification blue">12</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Yeni Yorumlar" class="tipB">
+                                            <span class="icon icomoon-icon-comments-2"></span>
+                                            <span class="txt">Yorumlar</span>
+                                            <span class="notification green">23</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Yeni Siparişler" class="tipB">
+                                            <span class="icon icomoon-icon-basket"></span>
+                                            <span class="txt">Siparişler</span>
+                                            <span class="notification">9 Yeni</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Yeni Görev" class="tipB">
+                                            <span class="icon icomoon-icon-stopwatch"></span>
+                                            <span class="txt">Görev</span>
+                                            <span class="notification blue">2</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Yeni Duyuru" class="tipB">
+                                            <span class="icon icomoon-icon-tie"></span>
+                                            <span class="txt">Duyuru</span>
+                                            <span class="notification green">4</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span12">
+
+                                <div class="box chart">
+
+                                    <div class="title">
+
+                                        <h4>
+                                            <span class="icon16 icomoon-icon-bars"></span>
+                                            <span>Network</span>
+                                        </h4>
+                                    </div>
+                                    <div class="content">
+                                        <div class="auto-update-chart" style="height: 145px;width:100%;">
+
+                                        </div>
+                                    </div>
+
+                                </div><!-- End .box -->
+
+                            </div>
+                        </div><!-- End .span8 -->
+
+                        <div class="span4">
+
+                            <div class="box chart">
+
+                                <div class="title">
+
+                                    <h4>
+                                        <span class="icon16 icomoon-icon-bars"></span>
+                                        <span>Durum Raporu</span>
+
+                                        <a href="#" class="icon tip" title="Detaylar"><span class="icon16 icomoon-icon-cog"></span></a>
+
+                                    </h4>
+
+                                </div>
+                                <div class="content">
+                                    <div class="order-bars-chart" style="height: 230px;width:100%;">
+
+                                    </div>
+                                </div>
+
+                            </div><!-- End .box -->
+
+                        </div><!-- End .span6 -->
+
+
+                    </div><!-- End .row-fluid -->
+
+                    <div class="row-fluid">
+                        <div class="span8">
+                            <div class="reminder">
+                                <h4>Şuanda havuzda bekleyen öncelikli işlemleriniz
+                                    <a href="#" class="icon tip" title="Ayarlar"><span class="icon16 icomoon-icon-cog-2"></span></a>
+                                </h4>
+                                <ul>
+                                    <li class="clearfix">
+                                        <div class="icon">
+                                            <span class="icon32 icomoon-icon-basket gray"></span>
+                                        </div>
+                                        <span class="number">7</span> 
+                                        <span class="txt">Bekleyen sipariş</span>
+                                        <a class="btn btn-warning">detay</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="icon">
+                                            <span class="icon32 icomoon-icon-support red"></span>
+                                        </div>
+                                        <span class="number">3</span> 
+                                        <span class="txt">Bekleyen destek talebi </span>
+                                        <a class="btn btn-warning">detay</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="icon">
+                                            <span class="icon32 icomoon-icon-new green"></span>
+                                        </div>
+                                        <span class="number">5</span> 
+                                        <span class="txt">Bekleyen faturanız </span>
+                                        <a class="btn btn-warning">detay</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="icon">
+                                            <span class="icon32 icomoon-icon-comments-4 blue"></span>
+                                        </div>
+                                        <span class="number">13</span> 
+                                        <span class="txt">Bekleyen yorumunuz</span> 
+                                        <a class="btn btn-warning">detay</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="icon">
+                                            <span class="icon32 icomoon-icon-cog dark"></span>
+                                        </div>
+                                        <span class="number">2</span> 
+                                        <span class="txt">Bekleyen sistem güncellemeniz </span>
+                                        <a class="btn btn-warning">detay</a>
+                                    </li>                                   
+                                </ul>
+                            </div><!-- End .reminder -->
+                        </div><!-- End .span8-->
+                        <div class="span4">
+
+                            <div class="todo">
+                                <h4>Hızlı Notlar <a href="#" class="icon tip" title="Not Ekle"><span class="icon16 icomoon-icon-plus-2"></span></a></h4>
+                                <ul>
+                                    <li class="clearfix">
+                                        <div class="txt">
+                                            javascript güncellemesi
+                                            <span class="by label">Kardeş Yazılım</span>
+                                            <span class="date badge badge-important">Bugün</span>
+                                        </div>
+                                        <div class="controls">
+                                            <a href="#" title="Ekle" class="tip"><span class="icon12 icomoon-icon-pencil"></span></a>
+                                            <a href="#" title="Sil" class="tip"><span class="icon12 icomoon-icon-remove"></span></a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="txt">
+                                            Stok bilgilerimiz güncellenmiştir
+                                            <span class="by label">Sistem</span>
+                                            <span class="date badge badge-important">Bugün</span>
+                                        </div>
+                                        <div class="controls">
+                                            <a href="#" title="Ekle" class="tip"><span class="icon12 icomoon-icon-pencil"></span></a>
+                                            <a href="#" title="Sil" class="tip"><span class="icon12 icomoon-icon-remove"></span></a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="txt">
+                                            Motivasyon yemeği
+                                            <span class="by label">Yönetim</span>
+                                            <span class="date badge badge-success">Yarın</span>
+                                        </div>
+                                        <div class="controls">
+                                            <a href="#" title="Sil" class="tip"><span class="icon12 icomoon-icon-pencil"></span></a>
+                                            <a href="#" title="Ekle" class="tip"><span class="icon12 icomoon-icon-remove"></span></a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="txt">
+                                            Bir alana bir bedava
+                                            <span class="by label label-important">Sistem</span>
+                                            <span class="date badge badge-info">08.08.2013</span>
+                                        </div>
+                                        <div class="controls">
+                                            <a href="#" title="Sil" class="tip"><span class="icon12 icomoon-icon-pencil"></span></a>
+                                            <a href="#" title="Ekle" class="tip"><span class="icon12 icomoon-icon-remove"></span></a>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="txt">
+                                            Üyelik kampanyası
+                                            <span class="by label label-important">Sistem</span>
+                                            <span class="date badge badge-info">08.08.2013</span>
+                                        </div>
+                                        <div class="controls">
+                                            <a href="#" title="Sil" class="tip"><span class="icon12 icomoon-icon-pencil"></span></a>
+                                            <a href="#" title="Ekle" class="tip"><span class="icon12 icomoon-icon-remove"></span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div><!-- End .span4 -->
+                    </div><!--row-fluid-->
+                    <div class="row-fluid">
+
+                        <div class="span12">
+
+                            <div class="box chart">
+
+                                <div class="title">
+
+                                    <h4>
+                                        <span class="icon16 icomoon-icon-bars"></span>
+                                        <span>Günlük Onaylanmış Sipariş Durumu</span>
+                                    </h4>
+                                    <a href="#" class="minimize">Küçült</a>
+                                </div>
+                                <div class="content">
+                                    <div class="stacked-bars-chart" style="height: 460px;width:100%;">
+
+                                    </div>
+                                </div>
+
+                            </div><!-- End .box -->
+
+                        </div><!-- End .span6 -->
+                    </div><!--row-fluid-->
+                    <div class="row-fluid">
+                        <div class="span6">
+
+                            <div class="box chart">
+
+                                <div class="title">
+
+                                    <h4>
+                                        <span class="icon16 icomoon-icon-bars"></span>
+                                        <span>Arama Raporu</span>
+                                    </h4>
+                                    <a href="#" class="minimize">Küçült</a>
+                                </div>
+                                <div class="content">
+                                    <div class="simple-donut" style="height: 230px;width:100%;">
+
+                                    </div>
+                                </div>
+
+                            </div><!-- End .box -->
+
+                        </div><!-- End .span6 -->
+                        <div class="span6">
+                            <div class="box chart">
+
+                                <div class="title">
+
+                                    <h4>
+                                        <span class="icon16 icomoon-icon-bars"></span>
+                                        <span>Siteye Ulaşım</span>
+                                    </h4>
+                                    <a href="#" class="minimize">Küçült</a>
+                                </div>
+                                <div class="content">
+                                    <div class="simple-pie" style="height: 230px;width:100%;">
+
+                                    </div>
+                                </div>
+
+                            </div><!-- End .box -->
+
+
+                        </div><!--span6-->
+
+                    </div><!-- End .row-fluid -->
+
+                    <!---->
+
+                    <div class="modal fade hide" id="myModal1">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span class="icon12 minia-icon-close"></span></button>
+                            <h3>Hızlı Gözat</h3>
+                        </div>
+                        <div class="modal-body">
+                           
+                            
+                            
+                            
+                            <div class="read-email well" style="display: block;">
+
+                               
+                                <form class="readmail form-horizontal">
+                                    <div class="form-row row-fluid">
+                                        <div class="span12">
+                                            <div class="row-fluid">
+                                                <label class="form-label span2" for="to">Subject:</label>
+                                                <input class="span10 text" id="to" name="to" type="text" value="Hello my friend" readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row row-fluid">
+                                        <div class="span12">
+                                            <div class="row-fluid">
+                                                <label class="form-label span2" for="subject">Sender:</label>
+                                                <div>
+                                                    <input class="span10 text" id="subject" name="subject" type="text" value="storm@gmail.com" readonly="readonly">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row row-fluid">
+                                        <div class="span12">
+                                            <div class="row-fluid">
+                                                <label class="form-label span2" for="subject">Date:</label>
+                                                <div style="margin-top: 7px;">
+                                                    <span>26 August 2012 3:00 pm</span>
+                                                    <span class="span10 help-block">
+                                                        <dl class="attach">
+                                                            <dd><a href="#" class="icon12 icomoon-icon-file-pdf">&nbsp;main.pdf</a></dd>
+                                                            <dd><a href="#" class="icon12 icomoon-icon-file-zip">&nbsp;package.zip</a></dd>
+                                                            <dd><a href="#" class="icon12 icomoon-icon-file-css">&nbsp;layout.css</a></dd>
+                                                        </dl>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row row-fluid">
+                                        <div class="span12">
+                                            <div class="row-fluid">
+                                                <textarea class="span12 elastic uniform" id="textarea" rows="4" readonly="readonly">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                              
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn" data-dismiss="modal">Kapat</a>
+                        </div>
+                    </div>
+                    <!---->
+
+                </div><!--contentwrapper-->
+
+            </div><!--content-->
+
+
+
+        </div><!--wrapper-->
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Important plugins put in all pages -->
+        <script  type="text/javascript" src="media/ext/jquery.min.js"></script>
+        <script type="text/javascript" src="skins/admin/proper/js/bootstrap/bootstrap.js"></script>  
+        <script type="text/javascript" src="skins/admin/proper/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="skins/admin/proper/js/jquery.mousewheel.js"></script>
+
+        <!-- Charts plugins -->
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.grow.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.pie.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.resize.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.tooltip_0.4.4.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/flot/jquery.flot.orderBars.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
+        <script type="text/javascript" src="media/ext/plugins/charts/knob/jquery.knob.js"></script><!-- Circular sliders and stats -->
+
+        <!-- Misc plugins -->
+        <script type="text/javascript" src="media/ext/plugins/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
+        <script type="text/javascript" src="media/ext/plugins/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
+        <script type="text/javascript" src="media/ext/plugins/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
+
+        <!-- Search plugin -->
+        <script type="text/javascript" src="media/ext/plugins/misc/search/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
+        <script type="text/javascript" src="media/ext/plugins/misc/search/tipuesearch.js"></script>
+
+        <!-- Form plugins -->
+        <script type="text/javascript" src="media/ext/plugins/forms/watermark/jquery.watermark.min.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/forms/uniform/jquery.uniform.min.js"></script>
+
+        <!-- Fix plugins -->
+        <script type="text/javascript" src="media/ext/plugins/fix/ios-fix/ios-orientationchange-fix.js"></script>
+
+        <!-- Important Place before main.js  -->
+        <script type="text/javascript" src="media/ext/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="media/ext/plugins/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
+
+        <!-- Init plugins -->
+        <script type="text/javascript" src="skins/admin/proper/js/main.js"></script><!-- Core js functions -->
+        <script type="text/javascript" src="skins/admin/proper/js/dashboard.js"></script><!-- Init plugins only for page -->
+        <script type="text/javascript" src="skins/admin/proper/js/charts.js"></script><!-- Init plugins only for page -->
+
+    </body>
+</html>
