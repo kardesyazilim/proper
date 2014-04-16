@@ -1,0 +1,24 @@
+
+    "name": "creasoup/creasoup",
+    "description": "Creasoup Main workflow",
+    "type": "workflow",
+    "keywords": [
+        "creasoup",
+        "proper"
+    ],
+    "homepage": "http://creasoup.com/",
+    "license": "Apache License",
+    "require": {
+        "php": ">=5.3.23"
+    },
+    "require-dev": {
+        "doctrine/annotations": ">=1.0",
+        "ircmaxell/random-lib": "dev-master",
+        "ircmaxell/security-lib": "dev-master",
+        "mikey179/vfsStream": "1.2.*",
+        "fabpot/php-cs-fixer": "*@dev",
+        "phpunit/PHPUnit": "3.7.*",
+        "satooshi/php-coveralls": "dev-master",
+        "sebastianbergmann/phpcov": "1.1.0"
+    },
+}
