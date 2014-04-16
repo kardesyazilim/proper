@@ -1,5 +1,7 @@
-:------:|:------:|:------:|:------:|
-[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) | Bağdat cad. No:147, Dilman Apt. Daire:3, Feneryolu 34726 | +90 (216) 478 42 00 | [slm@creasoup.com](slm@creasoup.com) |
+
+
+:------:|
+[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) |
 
 
 Version| Build Status| ID |
