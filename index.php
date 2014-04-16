@@ -1,2 +1,2 @@
 <?php
-require_once ('app/core/Crea/Register.php');
+//require_once ('app/core/Crea/Register.php');
