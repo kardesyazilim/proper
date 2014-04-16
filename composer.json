@@ -1,14 +1,19 @@
 {
-    "name": "creasoup/creasoup",
-    "description": "Creasoup Main workflow",
-    "type": "workflow",
-    "keywords": [
-        "creasoup",
-        "proper"
-    ],
-    "homepage": "http://creasoup.com/",
-    "license": "Apache License",
+    "name": "kardesyazilim/proper",
+    "description": "Creasoup Workflow",
+    "keywords": ["creasoup","workflow"],
+    "homepage": "https://github.com/kardesyazilim/proper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Leonidas Gorgo",
+        "email": "molonlabetr@gmail.com",
+        "homepage": "http://creasoup.com"
+    }],
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-2": {"CreaSoupNamespace": "app/"}
     }
 }
