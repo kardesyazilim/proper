@@ -1,13 +1,13 @@
 
-Company |
-:------:|
+Company | Address |
+:------:| :------:|
 [![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) |
-
+Bağdat Cad. |
 
 # creasoup  main work flow 
 
 
-Version| Build Status| ID |
+Version| Build Status| Parent ID |
 :------:|:-----:| :------:|
 v.0.1 b |[![Build Status](https://travis-ci.org/kardesyazilim/proper.svg?branch=master)](https://travis-ci.org/kardesyazilim/proper)| 0 |
 
