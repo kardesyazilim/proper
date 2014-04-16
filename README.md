@@ -1,8 +1,7 @@
 
 Company | Address |
 :------:| :------:|
-[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) |
-Bağdat Cad. |
+[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) | Bağdat Cad. |
 
 # creasoup  main work flow 
 
