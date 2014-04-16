@@ -11,3 +11,5 @@ notifications:
 email:
   - "molonlabetr@gmail.com"
   - "hasanerikan@creasoup.com"
+  on_success: [always|never|change] # default: change
+  on_failure: [always|never|change] # default: always
