@@ -1,7 +1,7 @@
 
 Company | Address |
 :------:| :------:|
-[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) | Bağdat Cad. |
+[![Creasoup Logo](http://www.creasoup.com/wp-content/uploads/2012/10/logo.png)](http://creasoup.com/) | Bağdat Cad. No:147, Dilman Apt. Daire:3, Feneryolu İstanbul |
 
 # creasoup  main work flow 
 
