@@ -19,7 +19,7 @@
 
     <filter>
         <whitelist>
-            <directory>./app/</directory>
+            <directory>./app/core/</directory>
         </whitelist>
     </filter>
 </phpunit>
