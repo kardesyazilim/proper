@@ -82,8 +82,13 @@ class getInit
             }
         }
         
-        if (!class_exists('Zend\Loader\AutoloaderFactory')) {
-            throw new RuntimeException('!Zend Framework dosyalarını kontrol ediniz.');
+        if (!class_exists('Zend\Loader\AutoloaderFactorys')) {
+            throw new \Register\RuntimeException('!Zend Framework dosyalarını kontrol ediniz.');
         }
+    }
+    function __autoload() {
+        require_once ($creaClassPaht);
+        if (method_exists($class_name, 'init')) call_user_func(array($class_name, 'init'));
+        return true;
     }
 }
