@@ -20,12 +20,13 @@ class getInit
                             while (false !== ($creaClass = readdir($crea))) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
                                     $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
-                                    
+                                    echo $creaClassFile;
                                     include "$creaClassFile";
                                      
-                                    $creaClass = glob($creaClass,'.php');
-                                    echo  $creaClass;
-                                    $creaClass = new $creaClass;
+                                    $creaClass = str_replace('.php', '',  $creaClass);
+                                    echo $creaClass;
+
+                                    
                                 }
                             }
                             while ($creaClass = readdir($crea)) {
@@ -70,7 +71,7 @@ class getInit
             }
             closedir($handle);
         }
-        
+            
         if (class_exists('Zend\Loader\AutoloaderFactory')) {
             return;
         }
@@ -86,9 +87,12 @@ class getInit
                 \Zend\Loader\AutoloaderFactory::factory(array('\Zend\Loader\StandardAutoloader' => array('autoregister_zf' => true)));
             }
         }
+        $error = new Error;
+        $error->Warning();
+
         
         if (!class_exists('Zend\Loader\AutoloaderFactorys')) {
-            throw new \Register\RuntimeException('!Zend Framework dosyalarını kontrol ediniz.');
+            throw new \Error\Warning('!Zend Framework dosyalarını kontrol ediniz.');
         }
     }
     function __autoload() {

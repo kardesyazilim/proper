@@ -1,5 +1,6 @@
 <?php
 namespace Register;
+
 class Register 
 {
     
@@ -8,7 +9,7 @@ class Register
             echo 'asdf';
     }
     function RuntimeException($return){
-        echo $return;
+        echo 'adsf';
     }
 }
 
