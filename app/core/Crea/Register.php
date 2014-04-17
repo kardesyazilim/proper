@@ -1,6 +1,29 @@
 <?php
-//register Blog
+class Crea
+{
+    
+    private $type;
+    private $config;
 
-//register library block
 
-//extend block
+
+    function __construct($config)
+	{
+		$this->config = '../../local/'.$config.'.php';
+		$this->getInit();
+
+	}
+    //register Blog
+    
+    //register library block
+    
+    //global block
+    //local block
+    
+    //run block
+    public function getInit(){
+    	Zend\Mvc\Application::init(include $this->config)->run();
+    	return;
+    }
+    
+}
