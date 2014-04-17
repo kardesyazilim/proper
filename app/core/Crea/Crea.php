@@ -25,6 +25,7 @@ class getInit
                                      
                                     $creaClass = str_replace('.php', '',  $creaClass);
                                     echo $creaClass;
+                                    spl_autoload_register($creaClass);
 
                                     
                                 }
