@@ -12,13 +12,12 @@ v.0.1 b |[![Build Status](https://travis-ci.org/kardesyazilim/proper.svg?branch=
 
 > creasoup workflow prepare
 
-``` The “PHP Specification Requests” are based on a similar idea—they should, in particular, ensure``` ``` that software com ponents made by different manufacturers and frameworks are compatible to one```  ``` another and can be used in combination. In contrast to “JSR”, the “PSR” procedure is relative ```
-``` new. To date only three specifications have been agreed upon.```
-``` • PSR-0: Defines the coherency between PHP namespaces and the organisation of PHP files in a ```
-``` file system in order to make the autoloading of classes, which should also be component- and ```
-``` manufacturer-independent, as simple as possible.```
-```• PSR-1 / PSR-1 basic: A new common coding standard.```
-```• PSR-2: An extension of the PSR-1 Coding Standard.```
+``` 
+The “PHP Specification Requests” are based on a similar idea—they should, in particular, ensure that software components made by different manufacturers and frameworks are compatible to one another and can be used in combination. In contrast to “JSR”, the “PSR” procedure is relative new. To date only three specifications have been agreed upon.
+• PSR-0: Defines the coherency between PHP namespaces and the organisation of PHP files in a file system in order to make the autoloading of classes, which should also be component- and manufacturer-independent, as simple as possible.
+• PSR-1 / PSR-1 basic: A new common coding standard.
+• PSR-2: An extension of the PSR-1 Coding Standard.
+```
 
 
 >> Moudle List
