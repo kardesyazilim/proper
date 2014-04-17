@@ -19,16 +19,16 @@ class getInit
                         if ($crea = opendir($this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR)) {
                             while (false !== ($creaClass = readdir($crea))) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
-                                    $creaClass = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
+                                    $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
-                                    include "$creaClass";
+                                    include "$creaClassFile";
                                 }
                             }
                             while ($creaClass = readdir($crea)) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
-                                    $creaClass = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
+                                    $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
-                                    include "$creaClass";
+                                    include "$creaClassFile";
                                 }
                             }
                             closedir($crea);
@@ -46,16 +46,16 @@ class getInit
                         if ($crea = opendir($this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR)) {
                             while (false !== ($creaClass = readdir($crea))) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
-                                    $creaClass = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
+                                    $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
-                                    include "$creaClass";
+                                    include "$creaClassFile";
                                 }
                             }
                             while ($creaClass = readdir($crea)) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
-                                    $creaClass = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
+                                    $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
-                                    include "$creaClass";
+                                    include "$creaClassFile";
                                 }
                             }
                             closedir($crea);
