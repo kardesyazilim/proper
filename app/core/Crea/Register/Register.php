@@ -1,13 +1,11 @@
 <?php
-namespace \Crea\Register
 
-class Register
+class Register 
 {
-	
-	function __construct()
-	{
-		# code...
-		echo 'test';
-	}
+    
+    function __construct()
+    {
+            echo 'asdf';
+    }
 }
 
