@@ -1,5 +1,5 @@
 <?php
-namespace Crea\Register;
+namespace \Crea\Register;
 
 class Register 
 {
@@ -8,7 +8,7 @@ class Register
     {
             echo 'asdf';
     }
-    function RuntimeException($return){
+    function test(){
         echo 'adsf';
     }
 }
