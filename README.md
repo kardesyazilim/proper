@@ -17,7 +17,9 @@ The “PHP Specification Requests” are based on a similar idea—they should, 
 • PSR-0: Defines the coherency between PHP namespaces and the organisation of PHP files in a file system in order to make the autoloading of classes, which should also be component- and manufacturer-independent, as simple as possible.
 • PSR-1 / PSR-1 basic: A new common coding standard.
 • PSR-2: An extension of the PSR-1 Coding Standard.
-[[!Michael Romer - Web Development with ZF2](https://leanpub.com/zendframework2-en)]
+
+[!Michael Romer - Web Development with ZF2](https://leanpub.com/zendframework2-en)
+
 ```
 
 
