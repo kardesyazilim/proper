@@ -22,6 +22,10 @@ class getInit
                                     $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
                                     include "$creaClassFile";
+                                     
+                                    $creaClass = glob($creaClass,'.php');
+                                    echo  $creaClass;
+                                    $creaClass = new $creaClass;
                                 }
                             }
                             while ($creaClass = readdir($crea)) {
@@ -29,6 +33,7 @@ class getInit
                                     $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
                                     
                                     include "$creaClassFile";
+                                    
                                 }
                             }
                             closedir($crea);
