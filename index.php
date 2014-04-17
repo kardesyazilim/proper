@@ -10,5 +10,4 @@ chdir(dirname(__DIR__));
 
 //crea register block
 require_once('app/core/Crea/Crea.php');
-$crea = new \Crea\Register;
-$crea->getInit('config');
+$crea = new \Crea\getInit('config');

@@ -1,9 +1,16 @@
 <?php
-namespace Crea;
+namespace \Crea
 
-
-
-
+class Register extends Crea
+{
+	
+	function __construct()
+	{
+		# code...
+		echo 'test';
+	}
+}
+/*
 class Register
 {
     
@@ -14,7 +21,9 @@ class Register
 
     function __construct()
 	{
-		
+	
+
+
 		
 
 	}
@@ -34,3 +43,4 @@ class Register
     }
     
 }
+*/
