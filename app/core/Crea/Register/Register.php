@@ -1,7 +1,7 @@
 <?php
-namespace \Crea
+namespace \Crea\Register
 
-class Register extends Crea
+class Register
 {
 	
 	function __construct()
@@ -10,37 +10,4 @@ class Register extends Crea
 		echo 'test';
 	}
 }
-/*
-class Register
-{
-    
-    private $type;
-    private $config;
 
-
-
-    function __construct()
-	{
-	
-
-
-		
-
-	}
-    //register Blog
-    
-    //register library block
-    
-    //global block
-    //local block
-    
-    //run block
-    public function getInit($configs){
-    	//Zend\Mvc\Application::init(include $this->config)->run();
-    	$this->config = '../../local/'.$configs.'.php';
-    	
-    	return;
-    }
-    
-}
-*/

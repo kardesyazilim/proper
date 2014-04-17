@@ -8,7 +8,7 @@ class getInit
     function __construct($config) {
         
         $this->c = __DIR__;
-        if ($handle = opendir(__DIR__)) {
+        if ($handle = opendir($this->c)) {
             
             while (false !== ($entry = readdir($handle))) {
                 if ($entry !== '.' & $entry !== '..' & $entry !== '.DS_Store') {
@@ -17,7 +17,19 @@ class getInit
                     if ($check == 'dir') {
                         
                         //echo 'folder';
-                        echo "$entry\n";
+                        
+                        if ($crea = opendir($this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR)) {
+                            while (false !== ($creaClass = readdir($crea))) {
+                                if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
+                                    $creaClass = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR.$creaClass;
+                                    include  $creaClass;
+                               
+                                }
+                            }
+                            while ($creaClass = readdir($crea)) {
+                            }
+                            closedir($crea);
+                        }
                     }
                 }
             }
