@@ -14,9 +14,9 @@ v.0.1 b |[![Build Status](https://travis-ci.org/kardesyazilim/proper.svg?branch=
 
 >> Moudle List
 
-Module | Module Description | Stability | Priority|
-:------ | :-------: |  :------: | :-------: |
-Root | Core Block | Unstable | 0 |
+Module | Module Description | Stability | Priority | * |
+:------ | :-------: |  :------: | :-------: |:-----:|
+Root | Core Block | Unstable | 0 | high |
 
 >> Changelog
 
@@ -24,3 +24,4 @@ Version  | Commit | Priority |
 :-------- | :--------: | :--------: | 
 v.0.01 | add zend framework library 2 | root | 
 v.0.02 | application folder desing | root |
+v.0.03 | add autoloader , add bootstrap | root |
