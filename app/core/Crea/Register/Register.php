@@ -1,5 +1,5 @@
 <?php
-namespace Register;
+namespace Crea\Register;
 
 class Register 
 {

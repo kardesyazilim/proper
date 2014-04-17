@@ -20,12 +20,12 @@ class getInit
                             while (false !== ($creaClass = readdir($crea))) {
                                 if ($creaClass !== '.' & $creaClass !== '..' & $creaClass !== '.DS_Store') {
                                     $creaClassFile = $this->c . DIRECTORY_SEPARATOR . $entry . DIRECTORY_SEPARATOR . $creaClass;
-                                    echo $creaClassFile;
+                                    //echo $creaClassFile;
                                     include "$creaClassFile";
                                      
                                     $creaClass = str_replace('.php', '',  $creaClass);
-                                    echo $creaClass;
-                                    spl_autoload_register($creaClass);
+                                    //echo $creaClass;
+
 
                                     
                                 }
@@ -88,11 +88,9 @@ class getInit
                 \Zend\Loader\AutoloaderFactory::factory(array('\Zend\Loader\StandardAutoloader' => array('autoregister_zf' => true)));
             }
         }
-        $error = new Error;
-        $error->Warning();
 
         
-        if (!class_exists('Zend\Loader\AutoloaderFactorys')) {
+        if (!class_exists('Zend\Loader\AutoloaderFactory')) {
             throw new \Error\Warning('!Zend Framework dosyalarını kontrol ediniz.');
         }
     }
