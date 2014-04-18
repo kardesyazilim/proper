@@ -25,7 +25,6 @@ class getInit
                                      
                                     $creaClass = str_replace('.php', '',  $creaClass);
                                     //echo $creaClass;
-                                 
 
                                     
                                 }
@@ -39,6 +38,7 @@ class getInit
                                 }
                             }
                             closedir($crea);
+
                         }
                     }
                 }
@@ -71,6 +71,7 @@ class getInit
                 }
             }
             closedir($handle);
+          
         }
             
         if (class_exists('Zend\Loader\AutoloaderFactory')) {

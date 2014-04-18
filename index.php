@@ -11,3 +11,6 @@ chdir(dirname(__DIR__));
 //crea register block
 require_once('app/core/Crea/Crea.php');
 $crea = new \Crea\getInit('config');
+$reg = new Crea\Register\creaRegister;
+$reg->test();
+
