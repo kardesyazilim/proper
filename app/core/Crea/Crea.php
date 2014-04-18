@@ -25,7 +25,7 @@ class getInit
                                      
                                     $creaClass = str_replace('.php', '',  $creaClass);
                                     //echo $creaClass;
-                                    \Register::test;
+                                 
 
                                     
                                 }
